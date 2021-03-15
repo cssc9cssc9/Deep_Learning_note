@@ -1,0 +1,137 @@
+{
+  "main": {
+    "id": "c7b2d874a8a8afe8",
+    "type": "split",
+    "children": [
+      {
+        "id": "456934da146a42d4",
+        "type": "split",
+        "children": [
+          {
+            "id": "24d2f4658b30393f",
+            "type": "split",
+            "children": [
+              {
+                "id": "365829472a3aa44a",
+                "type": "leaf",
+                "active": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Interpretable Convolution Neural Network.md",
+                    "mode": "source"
+                  }
+                },
+                "group": "2e980515f8a8e981"
+              },
+              {
+                "id": "22d56d845be295bf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Interpretable Convolution Neural Network.md",
+                    "mode": "preview"
+                  }
+                },
+                "group": "2e980515f8a8e981"
+              }
+            ],
+            "direction": "horizontal"
+          },
+          {
+            "id": "a6feebb4c58e5dba",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "C.C.Jay Kuo - Interpretable Convolutional Neural Networks via Feedforward Design.pdf"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "301233217dc0d01d",
+    "type": "split",
+    "children": [
+      {
+        "id": "95524e5af6fe5538",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81be09c75f6c057e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "84cf3d21d24480f6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "37de92b552152aa1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f11047667ef8c989",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f26aa8ee649d15f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Interpretable Convolution Neural Network.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Interpretable Convolution Neural Network.md",
+    "Untitled.md",
+    "C.C.Jay Kuo - Interpretable Convolutional Neural Networks via Feedforward Design.pdf",
+    "Object Detection/2016-01-06 - Faster R-CNN/Faster R-CNN - Towards Real-Time Object Detection with Region Proposal Networks.pdf",
+    "Object Detection/2015-09-27 - Fast R-CNN/Fast R-CNN.md",
+    "Object Detection/2013-11-11 - RCNN/RCNN.md",
+    "Object Detection/2013-11-11 - RCNN/Rich feature hierarchies for accurate object detection and semantic segmentation.pdf",
+    "Object Detection/2016-01-06 - Faster R-CNN/Faster-RCNN.md",
+    "Object Detection/2015-09-27 - Fast R-CNN/Fast R-CNN.pdf",
+    "RCNN.md"
+  ]
+}
