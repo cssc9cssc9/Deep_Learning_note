@@ -62,4 +62,21 @@ Practically, we not only take $x_t$ to be input layer, we want to take previous 
 ![[LSTM5.jpg|500]]
 where $c^{t-1}$ is previous memory cell, and $h^{t-1}$ is the previous output.
 then, the mutliple-layer LSTM format would be like
-![[LSTM6.jpg|500]]
+![[LSTM6.jpg|300]]
+
+#### How to deal with sentence in RNN?
+Then we classify the sequence to each classes
+e.g. "arrive Taipei on November 2nd"->"other" "dest" "other" "time" "time"
+then, when we input the word it would be predict to correct class.
+![[RNN1.jpg|500]]
+
+Unfortunately, RNN-based network is not always easy to learn.
+![[RNN2.jpg|500]]
+Why: **The error surface is rought**.
+![[RNN3.jpg|500]]
+Take a simple RRN as example:
+![[RNN4.jpg|500]]
+Then the output $y^{1000}$ would be $w^{999}$
+Consider
+![[RNN5.jpg|500]]
+i.e., the derivative function is sensitive to the origin weight. (Gradient explode.)
