@@ -3,9 +3,9 @@
 	Then, if neural network **have memory** to remember what it do when it comes out `leave` or `arrive`, then it maybe help neural network works
 
 # Recurrent Neural Network(RNN)
-#### Basic structure of RNN:
+#### RNN基本結構:
 ![[RNN.jpg|500]]
-$\qquad a_1, a_2$ store the previous neural output, update in every operation and involve in next iteration.
+$\qquad a_1, a_2$ 儲存著上次經過activation function計算後的值, 將會在下一次計算時和input值一起計算。
 
 #### Property
 For the reason the next operation would consider the current result, two iterations are dependent
@@ -80,3 +80,80 @@ Then the output $y^{1000}$ would be $w^{999}$
 Consider
 ![[RNN5.jpg|500]]
 i.e., the derivative function is sensitive to the origin weight. (Gradient explode.)
+
+#### Helpful Technique to solve gradient vanishing :
+- Long Short-term Memory(LSTM):
+	- Can deal with gradient vanishing (not gradient explode)->You can apply lower learning rate.
+		1. Memory and input are **added**.
+->The influence never disappears unless forget gate is closed.
+->No Gradient vanishing. (If forget gate is opened)
+- Gated Recurrent Unit(GRU):
+	- Combine input gate and forget gate
+->If input gate open->Forget gate would format the memory.
+i.e., If you want to input the new value, you should clear the memory first.
+- [Hinton proposed RNN](https://arxiv.org/pdf/1504.00941.pdf):
+	- If  Vanillla RNN initialized with identity matrix + ReLU activation function 
+-> Then the model would be more robust than LSTM
+
+#### More application of RNN
+1. Many to one
+	- Input and Output are same length:
+		- Slot filling
+	- Input: vector sequence, Output is only one vector.
+		- Sentiment analysis
+		![[RNN-application.jpg|400]]
+		- Hidden extraction(Key term extraction)
+		![[RNN-application1.jpg|400]]
+	- Input: vector sequence, Output is shorter
+		- Speech Recognition 
+			![[RNN-application2.jpg|400]]
+			And, solve this problem can use [Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf)
+			![[RNN-application3.jpg|400]]
+			How to train this model without $\phi$ ?
+			->List all possible alignments and considered as correct.
+			![[RNN-application4.jpg|400]] 
+			Pros: Model can possibily recognize the unknown sequence.
+
+2. Many to Many(No Limitation):
+	- [Sequence to sequence learning](https://arxiv.org/pdf/1409.3215.pdf)
+	(Both input and output are both sequence with different lengths)<br/>
+		- Model Translation
+				After reading the sequence(contain all the information about the input sequence)
+	-> output an character.
+		![[RNN-application5.jpg|400]]
+		You need to add symbol to terminate model.</br>
+		- Beyond Sequence
+		 [Syntatic parsing](https://arxiv.org/pdf/1412.7449)
+		![[RNN-application6.jpg|400]]
+		
+#### Sequence-to-sequence
+- [Auto-encoder for text](https://arxiv.org/pdf/1506.01057.pdf):
+	If we want to take a text message as input, we normally would choose bag-of-word.
+	->But it would not consider the order of text, that is not helpful to recognize the meaning like
+	  ![[seqence-to-sequence.jpg|300]]
+	  Then, we choose auto-encoder to consider the order of text as input
+	  ![[seqence-to-sequence1.jpg|400]]
+	  ![[seqence-to-sequence2.jpg|400]]
+	  
+- Auto-encoder for speech 
+	Dimension reduction for a sequence with variable length
+	![[sq2sq_speech.jpg|400]]
+	- Audio archive divided into variable
+		![[sq2sq_speech1.jpg|400]]
+
+	How to transform the speech into vector?
+	![[auto-encoder-speech.jpg|400]]
+	and the value produced by RNN encoder represent the whole audio segment.
+	Meanwhile, we want to refine the vector as possible as we can
+	We create a RNN decoder
+	![[auto-encoder-speech1.jpg|500]]
+	
+Demo of sequence to sequence: Chat-Bot
+![[demo-sq2sq.jpg|400]]
+
+#### [Attention-based Model](http://speech.ee.ntu.edu.tw/~tlkagk/courses/MLDS_2015_2/Lecture/Attain%20(v3).ecm.mp4/index.html)
+
+#### To Understand  more
+- [The unreasonable effectiveness of Recurrent Neural Network](http://karpathy.github.io/2015/05/21/rnn-effectiveness)
+- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+	

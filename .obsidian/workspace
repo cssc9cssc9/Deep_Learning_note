@@ -4,31 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "22d56d845be295bf",
+        "id": "3b0f1a22451f3dc4",
         "type": "leaf",
-        "dimension": 46.98717948717949,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "RNN/Recurrent Neurent Neural Network.md",
+            "file": "Semantic segmentation.md",
             "mode": "source"
           }
         },
-        "group": "75613e5b48833cc5"
+        "group": "4261478b947f184c"
       },
       {
-        "id": "1538648f6a477ff8",
+        "id": "9835c12a279e06e0",
         "type": "leaf",
-        "dimension": 53.01282051282051,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "RNN/Recurrent Neurent Neural Network.md",
+            "file": "Semantic segmentation.md",
             "mode": "preview"
           }
         },
-        "group": "75613e5b48833cc5"
+        "group": "4261478b947f184c"
       }
     ],
     "direction": "vertical"
@@ -84,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RNN/Recurrent Neurent Neural Network.md",
+                "file": "Semantic segmentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +99,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "RNN/Recurrent Neurent Neural Network.md",
+    "Semantic segmentation.md",
     "Untitled.md",
+    "RNN/Recurrent Neurent Neural Network.md",
     "RNN/Slot filling.md",
     "Slot filling.md",
     "Generator adversal Model/Conditional Generation by GAN.md",
     "Generator adversal Model/Conditional Generation.md",
     "Generator adversal Model/README.md",
     "Generator adversal Model/Generator adversarial network.md",
-    "Generator adversal Model/Structured Learning.md",
-    "Bottom-up approach.md"
+    "Generator adversal Model/Structured Learning.md"
   ]
 }
